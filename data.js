@@ -25,7 +25,7 @@ const PARTS = [
       ["Rozdz. 2: Sakramenty uzdrowienia",1420,1532,"c",2,2],
       ["Rozdz. 3: Sakramenty w służbie komunii",1533,1666,"c",2,3],
       ["Rozdz. 4: Inne celebracje liturgiczne",1667,1690,"c",2,4]]},
-  { id:3, roman:"III", title:"Część trzecia", name:"Życie w Chrystusie", from:1691, to:2557, due:"2027-04-10", color:"emerald",
+  { id:3, roman:"III", title:"Część trzecia", name:"Życie w Chrystusie", from:1691, to:2557, due:"2027-04-19", color:"emerald",
     items:[
       ["Wprowadzenie",1691,1698],
       ["Dział I: Powołanie człowieka: życie w Duchu Świętym",1699,2051,"h"],
