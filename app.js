@@ -53,9 +53,8 @@ function renderParts(){
     const topics = TOPICS[p.id] ? `
       <h3 class="mt-4 mb-1 font-semibold">${p.id === 3 ? "Tematy do pracy pisemnej" : "Przykładowe tematy listu apologetycznego"}</h3>
       <p class="mb-2 text-sm text-slate-600 dark:text-slate-400">${TOPIC_NOTE[p.id] || TOPIC_NOTE.def}</p>
-      <input id="topicFilter${p.id}" type="search" placeholder="Wyszukać temat lub numer…" aria-label="Wyszukać temat" class="w-full border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-800 px-3 py-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">
       <ul id="topicList${p.id}" class="mt-2"></ul>` : "";
-    return `<details class="mb-3 border dark:border-slate-700 border-l-[6px] ${c.b} bg-white dark:bg-slate-900">
+    return `<details class="mb-3 border border-l-[6px] ${c.b} bg-white dark:bg-slate-900">
       <summary class="flex cursor-pointer list-none items-center gap-3 px-4 py-3.5">
         <span class="w-12 shrink-0 text-center text-3xl font-semibold leading-none ${c.t}" aria-hidden="true">${p.roman}</span>
         <span class="flex-1"><span class="block text-xl font-semibold">${p.title}</span><span class="block text-sm text-slate-600 dark:text-slate-400">${esc(p.name)} · KKK ${rng(p.from, p.to)}</span></span>
